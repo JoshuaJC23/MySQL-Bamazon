@@ -2,9 +2,7 @@
 DROP DATABASE IF EXISTS bamazon_db;
 
 CREATE DATABASE bamazon_db;
-
 USE bamazon_db;
-
 -- Create Table
 CREATE TABLE products(
 -- create Columns
@@ -15,7 +13,6 @@ price DECIMAL(5,2) NOT NULL,
 stock_quantity INT(10),
 PRIMARY KEY (item_id)
 );
-
 -- insert items into columns
 INSERT INTO products (product_name, department_name, price, stock_quantity)
 VALUES ("Slinkey", "Toys", 15.50, 77);
